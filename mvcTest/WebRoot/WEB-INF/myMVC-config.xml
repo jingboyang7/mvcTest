@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc>
+	<formbeans>
+		<bean name="login" class="example.LoginForm" />
+		<bean name="login2" class="example.LoginForm2" />
+	</formbeans>
+	
+	<action-mappings>
+	    <action name="login" class="example.LoginAction" path="/login">
+		    <forward name="success" value="/WEB-INF/view/TestSuccess.jsp"/>
+		    <forward name="fail" value="/WEB-INF/view/TestFail.jsp"/>
+	    </action>
+	    <action name="login2" class="example.LoginAction2" path="/login2">
+		    <forward name="success" value="/WEB-INF/view/TestSuccess.jsp"/>
+		    <forward name="fail" value="/WEB-INF/view/TestFail.jsp"/>
+	    </action>
+	</action-mappings>
+
+</mvc>
